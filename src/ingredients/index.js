@@ -1,0 +1,1 @@
+export { addIngredientPage } from './addIngredientPage'
