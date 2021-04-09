@@ -1,8 +1,14 @@
 import React from 'react';
-import { UseMeals } from '../meals';
+import { UseMeals, MealsList } from '../meals';
 
 export const homePage = () => {
   const { meals, isLoading: isLoadingMeals, setMeals } = UseMeals();
   console.log(meals);
-  return <h1> asd </h1>;
+  return (
+    <div className="page-container">
+      <div className="column">
+        <MealsList isLoading={isLoadingMeals} meals={meals} />
+      </div>
+    </div>
+  );
 };
