@@ -1,5 +1,5 @@
 export const getShoppingListRoute = {
   method: 'get',
   path: '/shopping-list',
-  handler: async (res, req) => {},
+  handler: async (req, res) => {},
 };
