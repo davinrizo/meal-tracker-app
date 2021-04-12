@@ -1,1 +1,2 @@
-export { addIngredientPage } from './addIngredientPage'
+export { addIngredientPage } from './addIngredientPage';
+export { UseIngredients } from './useIngredients';
