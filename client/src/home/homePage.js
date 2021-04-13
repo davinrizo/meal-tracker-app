@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import { UseMeals, MealsList } from '../meals';
-import { UseIngredients } from '../ingredients';
+import { UseIngredients, IngredientsList } from '../ingredients';
 
 export const homePage = () => {
   const { meals, isLoading: isLoadingMeals, setMeals } = UseMeals();
@@ -23,7 +23,6 @@ export const homePage = () => {
         <IngredientsList
           isLoading={isLoadingIngredients}
           ingredients={ingredients}
-          onDelete={onDeleteIngredient}
         />
         <Link to="/shopping-list">
           <button className="shopping-list-button list-container full-width">
