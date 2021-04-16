@@ -1,38 +1,39 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { homePage } from './home';
-import { addIngredientPage } from './ingredients';
-import { recipeSearchPage } from './recipes';
-import { shoppingListPage } from './shopping-list';
+import { HomePage } from './home';
+import { RecipeSearchPage } from './recipes';
+import { AddIngredientPage } from './ingredients';
+import { ShoppingListPage } from './shopping-list';
 
-const routes = [
-  {
+const routes = [{
     path: '/',
-    Component: homePage,
+    Component: HomePage,
     exact: true,
-  },
-  {
-    path: '/add-ingredient',
-    Component: addIngredientPage,
-  },
-  {
+}, {
     path: '/recipes',
-    Component: recipeSearchPage,
-  },
-  {
+    Component: RecipeSearchPage,
+}, {
+    path: '/add-ingredient',
+    Component: AddIngredientPage,
+}, {
     path: '/shopping-list',
-    Component: shoppingListPage,
-  },
-];
+    Component: ShoppingListPage,
+}];
 
-export const Routes = () => (
-  <Router>
-    <Switch>
-      {routes.map((route, index) => (
-        <Route key={index} path={route.path} exact={route.exact}>
-          <route.Component />
-        </Route>
-      ))}
-    </Switch>
-  </Router>
-);
+export const Routes = () => {
+    return (
+        <Router>
+            <Switch>
+            {routes.map((route, index) => (
+                <Route
+                    key={index}
+                    path={route.path}
+                    exact={route.exact}
+                >
+                    <route.Component />
+                </Route>
+            ))}
+            </Switch>
+        </Router>
+    );
+}

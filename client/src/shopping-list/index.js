@@ -1,1 +1,1 @@
-export { shoppingListPage } from './shoppingListPage'
+export { ShoppingListPage } from './ShoppingListPage';

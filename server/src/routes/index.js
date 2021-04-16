@@ -8,12 +8,12 @@ import { getShoppingListRoute } from './getShoppingListRoute';
 import { searchRecipesRoute } from './searchRecipesRoute';
 
 export const routes = [
-  addIngredientRoute,
-  addMealRoute,
-  deleteIngredientRoute,
-  deleteMealRoute,
-  getIngredientsRoute,
-  getMealsRoute,
-  getShoppingListRoute,
-  searchRecipesRoute,
+    addIngredientRoute,
+    addMealRoute,
+    deleteIngredientRoute,
+    deleteMealRoute,
+    getIngredientsRoute,
+    getMealsRoute,
+    getShoppingListRoute,
+    searchRecipesRoute,
 ];

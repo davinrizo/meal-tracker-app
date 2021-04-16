@@ -1,2 +1,2 @@
-export { UseMeals } from './useMeals';
 export { MealsList } from './MealsList';
+export { useMeals } from './useMeals';
